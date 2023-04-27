@@ -10,6 +10,7 @@
 html {
   box-sizing: border-box;
   height: 100%;
+  color: var(--text)
 }
 
 *,
@@ -22,5 +23,26 @@ html {
 
 body {
   align-items: center;
-  background: var(--background)
+  background: var(--background);
+  display: flex;
+  height: inherit;
+  justify-content: center;
+}
+
+.wrapper {
+  background-color: var(--main);
+  border:  1px solid black;
+  padding: 10px;
+  /* DIMENSIONS OF CALCULATOR WHOLE */
+  height: 67vh;
+  width: 21vw;
+}
+
+.screen {
+
+}
+
+.calc-button {
+  height: 6vh;
+  width: 4.7vw;
 }

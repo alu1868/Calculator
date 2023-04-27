@@ -12,7 +12,17 @@
 <body>
 
   <div class="wrapper">
-  <!-- Section 0: header for future use -->
+  <!-- Section 0: Windows header -->
+  <section>
+    <p>Calculator</p>
+    <div class="calc-button-row memory-button-row">
+      <button class="memory-button">-</button>
+      <button class="memory-button">&square;</button>
+      <button class="memory-button">x</button>
+    </div>
+  </section>
+
+  <!-- Section 0.5: header for future use -->
   <section>
     <button class="menu-button">///</button>
     <h1>Standard</h1>
@@ -26,13 +36,13 @@
 
   <!-- Section B: Sub-Screen MC, MR, M+, M-, MS, M▼ -->
   <section>
-    <div class="calc-button-row">
-      <button class="calc-button">MC</button>
-      <button class="calc-button">MR</button>
-      <button class="calc-button">M+</button>
-      <button class="calc-button">M-</button>
-      <button class="calc-button">MS</button>
-      <button class="calc-button">M▼</button>
+    <div class="calc-button-row memory-button-row">
+      <button class="memory-button">MC</button>
+      <button class="memory-button">MR</button>
+      <button class="memory-button">M+</button>
+      <button class="memory-button">M-</button>
+      <button class="memory-button">MS</button>
+      <button class="memory-button">M▼</button>
     </div>
   </section>
 
@@ -40,50 +50,50 @@
   <section class="calc-buttons">
     <!-- Section C.1 Row 1 -->
     <div class="calc-button-row">
-      <button class="calc-button">&percnt;</button>
-      <button class="calc-button">CE</button>
-      <button class="calc-button">C</button>
-      <button class="calc-button">&larr;</button>
+      <button class="calc-button secondary-button">&percnt;</button>
+      <button class="calc-button secondary-button">CE</button>
+      <button class="calc-button secondary-button">C</button>
+      <button class="calc-button secondary-button">&larr;</button>
     </div>
 
     <!-- Section C.2 Row 2 -->
     <div class="calc-button-row">
-      <button class="calc-button">1/x</button>
-      <button class="calc-button">x<sup>2</sup></button>
-      <button class="calc-button"><sup>2</sup>&Sqrt;x</button>
-      <button class="calc-button">&divide;</button>
+      <button class="calc-button secondary-button">1/x</button>
+      <button class="calc-button secondary-button">x<sup>2</sup></button>
+      <button class="calc-button secondary-button"><sup>2</sup>&Sqrt;x</button>
+      <button class="calc-button secondary-button">&divide;</button>
     </div>
 
     <!-- Section C.3 Row 3 -->
     <div class="calc-button-row">
-      <button class="calc-button">7</button>
-      <button class="calc-button">8</button>
-      <button class="calc-button">9</button>
-      <button class="calc-button">x</button>
+      <button class="calc-button primary-button">7</button>
+      <button class="calc-button primary-button">8</button>
+      <button class="calc-button primary-button">9</button>
+      <button class="calc-button secondary-button">x</button>
     </div>
 
     <!-- Section C.4 Row 4 -->
     <div class="calc-button-row">
-      <button class="calc-button">4</button>
-      <button class="calc-button">5</button>
-      <button class="calc-button">6</button>
-      <button class="calc-button">-</button>
+      <button class="calc-button primary-button">4</button>
+      <button class="calc-button primary-button">5</button>
+      <button class="calc-button primary-button">6</button>
+      <button class="calc-button secondary-button">-</button>
     </div>
 
     <!-- Section C.5 Row 5 -->
     <div class="calc-button-row">
-      <button class="calc-button">1</button>
-      <button class="calc-button">2</button>
-      <button class="calc-button">3</button>
-      <button class="calc-button">+</button>
+      <button class="calc-button primary-button">1</button>
+      <button class="calc-button primary-button">2</button>
+      <button class="calc-button primary-button">3</button>
+      <button class="calc-button secondary-button">+</button>
     </div>
 
     <!-- Section C.6 Row 6 -->
     <div class="calc-button-row">
-      <button class="calc-button double">+/-</button>
-      <button class="calc-button">0</button>
-      <button class="calc-button">.</button>
-      <button class="calc-button">=</button>
+      <button class="calc-button primary-button">+/-</button>
+      <button class="calc-button primary-button">0</button>
+      <button class="calc-button primary-button">.</button>
+      <button class="calc-button accent">=</button>
     </div>
     
   </section>

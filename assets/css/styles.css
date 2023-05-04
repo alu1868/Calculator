@@ -4,13 +4,16 @@
   --primary: rgb(50, 50, 50);
   --secondary: rgb(59, 59, 59);;
   --accent: rgb(118, 185, 237);
-  --text: white;
+
+  --primary-text: white;
+  --secondary-text: rgb(166, 166, 166);
+  --tertiary-text: rgb(102, 102, 102);
 }
 
 html {
   box-sizing: border-box;
   height: 100%;
-  color: var(--text)
+  color: var(--primary-text)
 }
 
 *,
@@ -27,22 +30,67 @@ body {
   display: flex;
   height: inherit;
   justify-content: center;
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
 }
 
 .wrapper {
   background-color: var(--main);
-  border:  1px solid black;
-  padding: 10px;
-  /* DIMENSIONS OF CALCULATOR WHOLE */
-  height: 67vh;
-  width: 21vw;
+
+  /* Dimensions on standard desktop screen */
+  /* height: 52.2vh;
+  width: 16.8vw; */
+
+  height: 505px;
+  width: 325px;
 }
 
 .screen {
+  background-color: var(--main);
+  height: 14.24vh;
+}
 
+.calc-button-wrapper {
+  border: 1px solid white; /* TO BE REMOVED */
+  height: 60%;
+  width: 100%;
+  margin: auto;
+}
+
+.calc-button-row {
 }
 
 .calc-button {
-  height: 6vh;
-  width: 4.7vw;
+  height: 47.86px;
+  width: 77.2px;
+  border-radius: 5px;
+  margin: 0.4px;
+}
+
+.secondary-button{
+ background-color: var(--secondary);
+ color: var(--primary-text);
+}
+
+.primary-button {
+  background-color: var(--primary);
+  color: var(--primary-text);
+}
+
+.accent-button {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
+.memory-button {
+  margin: 1px;
+  padding: 5px;
+  background: none;
+  color: white;
+  border: none;
+}
+
+.memory-button:hover {
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
 }

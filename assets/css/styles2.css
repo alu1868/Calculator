@@ -1,0 +1,182 @@
+:root {
+  --background: rgb(25, 25, 25);
+  --main: rgb(32, 32, 32);
+  --primary: rgb(50, 50, 50);
+  --secondary: rgb(59, 59, 59);
+  --tertiary: rgb(40, 40, 40);
+  --accent: rgb(118, 185, 237);
+
+  --primary-text: white;
+  --secondary-text: rgb(166, 166, 166);
+  --tertiary-text: rgb(102, 102, 102);
+
+  --border-radius: 5px;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  color: var(--primary-text)
+}
+
+*,
+* :before,
+* :after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: var(--background);
+  display: flex;
+  height: inherit;
+  justify-content: center;
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+}
+
+button {
+  background-color: var(--main);
+  color: var(--primary-text);
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+.wrapper {
+  background-color: var(--main);
+  /* Dimensions on standard desktop screen */
+  /* height: 52.2vh;
+  width: 16.8vw; */
+  height: 502px;
+  width: 322px;
+  padding: 3.78px 5.2px 3.78px 5.2px;
+}
+
+/* Windows Tab */
+.windows-row {
+  height: 5%;
+  width: 100%;
+  display: flex;
+  padding: 0 2px;
+  justify-content: space-between;
+}
+
+.windows-button:hover {
+  width: 50px;
+  background-color: var(--secondary)
+}
+
+.exit-button:hover {
+  background-color: red;
+}
+
+
+/* Weird Spacing Gap between the windows tab and the menu row */
+.weird-gap {
+  height: 3%;
+  width: 100%;
+}
+
+/* Menu row, tells you what calculator you're using + menu button */
+.menu-row {
+  height: 6%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator-type {
+  height: 100%;
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Screen content */
+.screen {
+  height: 20%;
+  width: 100%;
+}
+
+.sub-text {
+  color: var(--secondary-text)
+}
+
+.primary-text {
+  color: var(--primary-text)
+}
+
+/* Memory buttons */
+.memory-row {
+  height: 6%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0.5% 0;
+}
+
+.memory-button {
+  height: 100%;
+  width: 16.67%;
+  color: var(--primary-text);
+  background-color: var(--main);
+}
+
+.memory-button:hover {
+  background-color: var(--secondary);
+}
+
+/* general calculator functions */
+.calc-button-wrapper {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.calc-button-row {
+  height: 15.667%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calc-button {
+  color: var(--primary-text);
+  font-size: 115%;
+  height: 100%;
+  width: 24.25%;
+}
+
+.primary-button {
+  background-color: var(--primary);
+}
+
+.primary-button:hover {
+  background-color: var(--secondary);
+}
+
+.primary-button:active {
+  background-color: var(--tertiary);
+}
+
+.secondary-button {
+  background-color: var(--secondary);
+}
+
+.secondary-button:hover {
+  background-color: var(--primary);
+}
+
+.secondary-button:active {
+  background-color: var(--secondary);
+}
+
+.equals-button {
+  font-weight: bold;
+  color: var(--tertiary-text);
+  background-color: var(--accent);
+}
